@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>pomodoro</title>
+        <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="index.js"></script>
+        <link href="index.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+      <div class = "container-fluid">
+        <div class = "display">
+          <div class = "row" id = "intervalRow">
+            <div class = "col-xs-4">
+              <h3 type = "button" class = "-" id = "i-" onClick = "incOne(this.id)">-</h3>
+            </div>
+            <div class = "col-xs-4">
+              <h3 id = "interval"></h3>
+            </div>
+            <div class = "col-xs-4">
+              <h3 type = "button" class = "+" id = "i+" onClick = "incOne(this.id)">+</h3>
+            </div>
+          </div>
+          <div class = "row">
+            <p>intervals</p>
+          </div>  
+          <div class = "row" id = "workRow">
+              <div class = "col-xs-4">
+                <h1 type = "button" class = "-" id = "w-" onClick = "incOne(this.id)">-</h1>
+              </div>
+              <div class = "col-xs-4">
+                <h1 id = "work"></h1>
+              </div>
+              <div class = "col-xs-4">
+                <h1 type = "button" class = "+" id = "w+" onClick = "incOne(this.id)">+</h1>
+              </div>
+          </div>
+          <div class = "row">
+            <p>work time</p>
+          </div> 
+          <div class = "row" id = "breakRow">
+            <div class = "col-xs-4">
+              <h2 type = "button" class = "-" id = "b-" onClick = "incOne(this.id)">-</h2>
+            </div>
+            <div class = "col-xs-4">
+              <h2 id = "break"></h2>
+            </div>
+            <div class = "col-xs-4">
+              <h2 type = "button" class = "+" id = "b+" onClick = "incOne(this.id)">+</h2>
+            </div>
+          </div>
+          <div class = "row">
+            <p>break time</p>
+          </div> 
+        </div>
+        <div class = "row">
+          <div class = "col-xs-6">
+            <button type = "button" class = "btn center-block" id = "cancel">cancel</button>
+          </div>
+          <div class = "col-xs-6">
+            <button type = "button" class = "btn center-block" data-toggle="button" aria-pressed= "false" onClick = "runTimer(this.id)" id = "run">start</button>
+          </div>
+        </div>
+      </div>
+    </body>
+</html>
