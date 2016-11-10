@@ -1,0 +1,46 @@
+body {
+  font-family: Monospace;
+  background-color: black;
+}
+
+.container-fluid {
+  color: white;
+}
+
+p, h1, h2, h3 {
+  text-align: center;
+}
+
+p {
+  font-size: 13px;
+}
+
+.display {
+  height: 300px;
+}
+
+.display {
+  background-color: black;
+  border-color: black;
+  outline-style: none !important;
+}
+
+.btn {
+  height: 80px;
+  width: 80px;
+  border-radius: 80px;
+  text-align: center;
+  outline-style: none !important;
+}
+
+#run {
+  background-color: #43934b;  /* green */
+}
+
+#run:hover {
+  background-color: #306936;  /* dark green */
+}
+
+#run:active {
+  background-color: #d09d25; /* yellow */   /* #a0791c dark yellow */
+}
